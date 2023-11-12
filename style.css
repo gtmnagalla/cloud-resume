@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:100,200,300,400,500,700);
+
+
+.wrapper {
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+    display: grid;
+    grid-row-gap: 20px;
+  }
+
+.header {
+    grid-column: 1 / 4;
+    grid-row: 1 ;
+  }
+
+.content {
+    grid-column: 1 / 4;
+  }
+
+.sidebar {
+    grid-column: 1 / 2;
+  }
+
+.line {
+  grid-column: 1 / 4;
+}
+
+ @media (min-width: 550px) {
+
+    .wrapper {
+      grid-template-columns: 2fr 4fr;
+      grid-column-gap: 2em;
+      grid-row-gap: 20px;
+    }
+
+    .header {
+      grid-column: 1 / 4;
+      grid-row: 1 / 2;
+    }
+
+    .sidebar {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+
+    .content {
+      grid-column: 2 / 4;
+      grid-row: 2 / 3;
+    }
+   
+   .line {
+     grid-column: 1 / 4;
+     grid-row: 3 / 4;
+   }
+
+
+}
+
+
+html {
+  font-size: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 3em;
+  text-transform: uppercase;
+  line-height: 1em;
+  margin-top: 1.25em;
+  margin-bottom: .35em;
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 1.35em;
+  letter-spacing: .01em;
+  text-transform: uppercase;
+  line-height: 1.15em;
+  margin-top: 1.5em;
+  margin-bottom: 0.25em;
+}
+
+h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 1.25em;
+  line-height: 1em;
+  margin-top: 1.5em;
+  margin-bottom: .25em;
+}
+
+h4 {
+  font-family: 'Georgia', serif;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 1em;
+  line-height: 1.2em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+a {
+  font-family: 'Georgia', serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.75em;
+}
+
+p {
+  font-family: 'Georgia', serif;
+  font-weight: 100;
+  line-height: 1.5;
+  font-size: .9em;
+}
+
+hr.style2 {
+	height: 1px;
+  border: 0;
+  background: #363636;
+  margin-bottom: .2em;
+}
+
+hr.style1 {
+	height: 4px;
+  border: 0;
+  background: #999999;
+  margin-bottom: .2em;
+}
+
+
+a:link {
+  color: #000;
+  text-decoration: none;
+  white-space: nowrap;
+  padding-right: 1em;
+}
+
+a:visited {
+  color: #363636;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #777777;
+}
+
+a:active {
+  color: #888888;
+}
